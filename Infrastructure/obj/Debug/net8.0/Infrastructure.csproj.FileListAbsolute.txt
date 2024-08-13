@@ -1,0 +1,58 @@
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Infrastructure.deps.json
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Infrastructure.runtimeconfig.json
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Infrastructure.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Infrastructure.pdb
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Application.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Domain.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Application.pdb
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Domain.pdb
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfo.cs
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Infrastructure.deps.json
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Infrastructure.runtimeconfig.json
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Infrastructure.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Infrastructure.pdb
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Application.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Domain.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Application.pdb
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Domain.pdb
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfo.cs
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Infrastructure.deps.json
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Infrastructure.runtimeconfig.json
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Infrastructure.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Infrastructure.pdb
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Application.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Domain.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Application.pdb
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\bin\Debug\net8.0\Domain.pdb
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfo.cs
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll

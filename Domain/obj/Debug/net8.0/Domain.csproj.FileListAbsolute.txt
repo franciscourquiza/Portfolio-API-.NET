@@ -1,0 +1,37 @@
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\bin\Debug\net8.0\Domain.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\bin\Debug\net8.0\Domain.pdb
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.pdb
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\Domain\obj\Debug\net8.0\ref\Domain.dll

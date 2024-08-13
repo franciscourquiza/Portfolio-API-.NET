@@ -1,0 +1,441 @@
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\appsettings.json
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\CleanArchitectureAPI.exe
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\CleanArchitectureAPI.deps.json
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\CleanArchitectureAPI.runtimeconfig.json
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\CleanArchitectureAPI.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\CleanArchitectureAPI.pdb
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Application.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Domain.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Application.pdb
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Domain.pdb
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.csproj.AssemblyReference.cache
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.AssemblyInfoInputs.cache
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.AssemblyInfo.cs
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.csproj.CoreCompileInputs.cache
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets\msbuild.CleanArchitectureAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.CleanArchitectureAPI.props
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CleanArchitectureAPI.props
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CleanArchitectureAPI.props
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\scopedcss\bundle\CleanArchitectureAPI.styles.css
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArc.F86B97A2.Up2Date
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\refint\CleanArchitectureAPI.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.pdb
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.genruntimeconfig.cache
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\ref\CleanArchitectureAPI.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Humanizer.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.Data.Sqlite.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\SQLitePCLRaw.core.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Infrastructure.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Infrastructure.pdb
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\cvpru\OneDrive\Escritorio\Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\appsettings.Development.json
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\appsettings.json
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\CleanArchitectureAPI.exe
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\CleanArchitectureAPI.deps.json
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\CleanArchitectureAPI.runtimeconfig.json
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\CleanArchitectureAPI.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\CleanArchitectureAPI.pdb
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\AutoMapper.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Humanizer.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.Data.Sqlite.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\SQLitePCLRaw.core.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.CodeDom.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-arm\native\libe_sqlite3.so
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-armel\native\libe_sqlite3.so
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-s390x\native\libe_sqlite3.so
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-x86\native\libe_sqlite3.so
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\win-arm\native\e_sqlite3.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Application.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Domain.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Infrastructure.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Application.pdb
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Infrastructure.pdb
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Domain.pdb
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.csproj.AssemblyReference.cache
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.AssemblyInfoInputs.cache
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.AssemblyInfo.cs
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.csproj.CoreCompileInputs.cache
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets.build.json
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets.development.json
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets\msbuild.CleanArchitectureAPI.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.CleanArchitectureAPI.props
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CleanArchitectureAPI.props
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CleanArchitectureAPI.props
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\scopedcss\bundle\CleanArchitectureAPI.styles.css
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArc.F86B97A2.Up2Date
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\refint\CleanArchitectureAPI.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.pdb
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.genruntimeconfig.cache
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\ref\CleanArchitectureAPI.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\FluentValidation.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\MailKit.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\MimeKit.dll
+D:\Proyectos Programacion\PortfolioAPI\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\appsettings.json
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\CleanArchitectureAPI.exe
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\CleanArchitectureAPI.deps.json
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\CleanArchitectureAPI.runtimeconfig.json
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\CleanArchitectureAPI.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\CleanArchitectureAPI.pdb
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Humanizer.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\MailKit.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.Data.Sqlite.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\MimeKit.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\SQLitePCLRaw.core.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Application.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Domain.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Infrastructure.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Application.pdb
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Infrastructure.pdb
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\Domain.pdb
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.csproj.AssemblyReference.cache
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.AssemblyInfoInputs.cache
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.AssemblyInfo.cs
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.csproj.CoreCompileInputs.cache
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.sourcelink.json
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets\msbuild.CleanArchitectureAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.CleanArchitectureAPI.props
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CleanArchitectureAPI.props
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CleanArchitectureAPI.props
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\scopedcss\bundle\CleanArchitectureAPI.styles.css
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArc.F86B97A2.Up2Date
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\refint\CleanArchitectureAPI.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.pdb
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.genruntimeconfig.cache
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\ref\CleanArchitectureAPI.dll
