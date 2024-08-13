@@ -11,6 +11,7 @@
 - Validación de modelos DTOs con Regular Expressions.
 - Middleware para gestionar todas las excepciones (deja limpio el controlador).
 - Autenticado mediante JWT Tokens.
+- Roles de User, Admin y SuperAdmin diferenciados.
 - Envío de correos electrónicos para Resetear Contraseñas.
 - Model First (creación, migración y versionamiento de la base de datos a partir del modelo).
 - Interfaces de Servicio y repositorio.
@@ -20,86 +21,104 @@
 # Auth para autenticación y autorización
 El sistema de Auth cuenta de controlador, servicio y repositorio, y permite gestionar permisos y roles de acceso a lo endpoints contando con:
 - Login.- Genera Token de Acceso.
-- Register.- Registro de usuarios con validación de correo para activar la cuenta y poder acceder.
 - Request Password Reset.- Realiza una petición con el correo para resetear contraseña, se envía un correo de verificación.
 - Reset Password.- Endpoint de verificación para el reseteo de password, genera una nueva contraseña aleatoria y la envía por correo.
 
-![](https://i.ibb.co/vLNjhxf/image.png)
+![](https://i.ibb.co/7vLDNtb/AUTH.png)
 
-# Post
-El sistema permite una gestión completa de blogpost solicitando permisos de Editor y/o Administrador.
-- Crear post.- Permite crear post con tags, categorías, miniatura, fecha de creación y actualización, estado y demás. (Administrador y Editor)
+# User
+El sistema permite una gestión completa de usuarios solicitando permisos de Administrador o SuperAdmin cuando es requerido.
+- Obtener usuario por Nombre (Acceso sin roles requeridos).
+- Obtener usuario por Email (Acceso sin roles requeridos).
+- Obtener un listado de todos los usuarios (Requiere rol de Admin o SuperAdmin).
+- Crear cuenta.- Permite crear una cuenta con los siguientes datos. (No requiere ningun rol).
+    - Nombre
+    - Email(Primary Key)
+    - Contraseña
+    - Resumen de perfil
+    - Edad
+    - País
+    - Estado
+    - Ciudad
+    - Dirección
+    - Número de teléfono
+    - Link de LinkedIn
+    - Link de GitHub
+    - Rol de Usuario
+- Editar cuenta (Los usuarios solamente pueden editar sus propias cuentas, esta validación se realiza tomando el email).
+- Eliminar cuenta por Email (Acción que solamente el SuperAdmin puede llevar a cabo).
+
+![](https://i.ibb.co/8YDN5gC/USER.png)
+
+# Admin
+Gestión de Admins llevado a cabo únicamente por el SuperAdmin:
+- Obtener Admin por Nombre.
+- Obtener Admin por Email.
+- Obtener todos los Admins.
+- Crear un Admin.
+- Editar un Admin.
+- Eliminar Admin por Email.
+
+![](https://i.ibb.co/tX4srgf/ADMIN-copia.png)
+
+# WorkExperience
+Permite cargar experiencias laborales a los usuarios (Se debe estar logeado para poder acceder a los métodos):
+- Obtener experiencia laboral por título.
+- Obtener experiencia laboral por Id.
+- Obtener todas las experiencias laborales.
+- Crear una experiencia laboral para la cuenta que está logeada:
+    - Id (Primary Key)
     - Título
-    - Contenido
-    - UserId (usuario que realizó la publicación)
-    - ImageId (miniatura de la publicación, opcional)
-    - CategoryId (Id o lista de Ids de categorías, opcional)
-    - Fecha de creación
-    - Fecha de actualización (se actualiza cada que hacen un update del post)
-    - Published (estado para ver si fue publicado o esta sin publicar)
-    - Tags (lista de string para tags)
-- Listar post con paginación y, filtro de publicados y no publicados. (IsPublished = true / false / null para todos)
-- Obtener post por Id.
-- Editar post por Id. (Administrador y Editor)
-- Eliminar post por Id. (Administrador y Editor)
-- Filtrar post.- Permite filtrar los post por diferentes filtros como:
-    - Filtro por categoría (id)
-    - Filtro por usuario (id)
-    - Filtro por fecha de creación (YYYY-MM-DD)
-    - Filtro por tag
-- Buscar post por término.- Busca post por termino o palabras claves que se encuentren en el título o contenido del post.
+    - Descripción
+    - Fecha de inicio
+    - Fecha de finalización
+    - UserEmail (Foreign Key a la tabla Users)
+- Editar experiencia laboral por título (Tiene que ser propia al usuario logeado).
+- Eliminar experiencia laboral por título (Tiene que ser propia al usuario logeado).
 
-![](https://i.ibb.co/f1JX31V/image.png)
+![](https://i.ibb.co/h7FvWds/WORK.png)
 
-# Usuarios
-Gestión de usuarios con Jwt y diferentes roles y permisos:
-- Crear usuario.- Permite crear nuevos usuarios directamente con la cuenta activa (solo Administrador) (IsActive = true)
-- Listar usuarios con paginación.
-- Obtener usuario por Id.
-- Editar usuario por Id (solo Administrador).
-- Eliminar usuario por Id (solo Administrador).
-- Modificar contraseña.- Permite actualizar la contraseña del usuario (requiere estar logeado).
+# Proyect
+Permite cargar proyectos personales a los usuarios (Se debe estar logeado para poder acceder a los métodos):
+- Obtener proyecto personal por título.
+- Obtener proyecto personal por Id.
+- Obtener todas los proyectos personales.
+- Crear un proyecto personal para la cuenta que está logeada:
+    - Id (Primary Key)
+    - Título
+    - Descripción
+    - Fecha de inicio
+    - Fecha de finalización
+    - UserEmail (Foreign Key a la tabla Users)
+- Editar proyecto personal por título (Tiene que ser propia al usuario logeado).
+- Eliminar proyecto personal por título (Tiene que ser propia al usuario logeado).
 
-![](https://i.ibb.co/87F5j3q/image.png)
+![](https://i.ibb.co/NNZDdLt/PROYECT.png)
 
-# Imagenes
-Permite subir imágenes a la dirección wwwroot aceptando solo formatos de imagenes
-- Subir imágenes (Administrador y Editor)
-- Listar imagenes con paginación
-- Obtener imagenes por id
-- Editar imágenes por Id (Administrador y Editor)
-- Eliminar imágenes por Id (Administrador y Editor)
+# Education
+Permite cargar educaciones a los usuarios (Se debe estar logeado para poder acceder a los métodos):
+- Obtener educación por título.
+- Obtener educación por Id.
+- Obtener todas las educaciones.
+- Crear una educación para la cuenta que está logeada:
+    - Id (Primary Key)
+    - Título
+    - Descripción
+    - Fecha de inicio
+    - Fecha de finalización
+    - UserEmail (Foreign Key a la tabla Users)
+- Editar educación por título (Tiene que ser propia al usuario logeado).
+- Eliminar educación por título (Tiene que ser propia al usuario logeado).
 
-![](https://i.ibb.co/Tm4QXgc/img.png)
+![](https://i.ibb.co/zVnNKRX/EDUCATION.png)
 
-# Category
-La sección de category permite gestionar las categorías las cuales pueden relacionarse a los post de muchos a muchos, esta permite:
-- Crear categrías (solo Administrador)
-- Listar categorías con paginación
-- Obtener categoría por Id
-- Editar categoría por Id (solo Administrador)
-- Borrado lógico de categoría por Id (solo Administrador) (IsDelete = true)
+# DTO para la administración de entrada y salida de datos
 
-![](https://i.ibb.co/Bn2KKkf/image.png)
-
-# Comments
-La sección de comments permite a los visitantes del blog comentar publicaciones:
-- Crear comentarios.- Endpoint público.
-- Listar comentarios aprobados por PostId.
-- Listar todos los comentarios con filtro para todos, aprobados y sin aprobar por PostId (requiere estar logeado).
-- Editar comentario por Id (Administrador y Editor)
-- Eliminar comentario por Id (Administrador y Editor)
-- Aprobar comentario por Id (Administrador y Editor) (IsApproved = true)
-
-![](https://i.ibb.co/T4HJSLM/image.png)
-
-# DTO para la administración de entrata y salida de datos
-Para este sistema se cuenta con más de 24 DTOs.
-![](https://i.ibb.co/vP0xywq/swagger-DTO-backend-blog.png)
+![](https://i.ibb.co/THByn4n/DTOS.png)
 
 # Dependencias
 - Entity Framework
-- Entity Framwork SQLServer
+- Entity Framwork SQLite
 - Entity Framwork Core
 - Entity Framwork Tools
 - AutoMapper
