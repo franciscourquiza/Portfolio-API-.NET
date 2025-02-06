@@ -1,13 +1,13 @@
 ﻿using Application.Dtos.UserDtos;
+using Application.Interfaces;
 using AutoMapper;
 using Domain.Entities;
+using Domain.Exceptions;
 using Domain.Interfaces;
-using Microsoft.EntityFrameworkCore;
-using SQLitePCL;
 
 namespace Application.Services
 {
-    public class UserService
+    public class UserService : IUserService
     {
         private readonly IUserRepository _repository;
         private readonly IMapper _mapper;
@@ -16,30 +16,32 @@ namespace Application.Services
             _repository = repository;
             _mapper = mapper;
         }
-
-        
-        public UserWithoutPasswordDto? Get(string name) 
+        public async Task<UserWithoutPasswordDto> GetUserWithoutPasswordByName(string name)
         {
-            UserWithoutPasswordDto? user = Get(name);
-            if (user.Name == name)
+            User? user = await _repository.GetByName(name);
+            if (user?.Name == name)
             {
-                return user;
+                UserWithoutPasswordDto userWithoutPassword = new UserWithoutPasswordDto()
+                {
+                    Name = name,
+                    Email = user.Email,
+                    Summary = user.Summary,
+                    Age = user.Age,
+                    Country = user.Country,
+                    State = user.State,
+                    City = user.City,
+                    Adress = user.Adress,
+                    Phone = user.Phone,
+                    LinkedInLink = user.LinkedInLink,
+                    GitHubLink = user.GitHubLink,
+                };
+                return userWithoutPassword;
             }
             return null;
         }
-        public List<User> Get() 
+        public async Task<UserWithoutPasswordDto> GetUserWithoutPasswordByEmail(string email)
         {
-            return _repository.Get();
-        }
-
-        public async Task<User> GetByEmailAsync(string email)
-        {
-            return await _repository.GetByEmailAsync(email);
-        }
-
-        public UserWithoutPasswordDto? GetUserWithoutPassword(string email)
-        {
-            User? user = _repository.GetByEmail(email);
+            User? user = await _repository.GetByEmail(email);
             if (user?.Email == email)
             {
                 UserWithoutPasswordDto userWithoutPassword = new UserWithoutPasswordDto()
@@ -61,53 +63,38 @@ namespace Application.Services
             return null;
         }
 
-        public UserWithoutPasswordDto? GetUserWithoutPasswordByName(string name)
+        public async Task<List<User>> GetAllUsers()
         {
-            User? user = _repository.Get(name);
-            if (user?.Name == name)
-            {
-                UserWithoutPasswordDto userWithoutPassword = new UserWithoutPasswordDto()
-                {
-                    Name = name,
-                    Email = user.Email,
-                    Summary = user.Summary,
-                    Age = user.Age,
-                    Country = user.Country,
-                    State = user.State,
-                    City = user.City,
-                    Adress = user.Adress,
-                    Phone = user.Phone,
-                    LinkedInLink = user.LinkedInLink,
-                    GitHubLink = user.GitHubLink,
-                };
-                return userWithoutPassword;
-            }
-            return null;
+            return await _repository.Get();
         }
 
-        public User? GetEmailForCreation(string email)
-        {
-            return _repository.GetByEmail(email);
-        }
-        public void Add(UserForAddRequest request)
+        public async Task<User> CreateUser(UserForAddRequest request)
         {
             User? user = _mapper.Map<User>(request);
+
             if (user == null)
             {
                 throw new ArgumentException(nameof(request));
             }
-            _repository.Add(user);
+            await _repository.Add(user);
+
+            return user;
         }
-        public void Update(UserForEditDto request, string email)
+
+        public async Task<User> UpdateUser(UserForEditDto request, string userEmail)
         {
-            User userToEdit = _repository.GetByEmail(email);
-            User userEdited = _mapper.Map(request, userToEdit);
-            _repository.Update(userEdited);
+            User? userToEdit = await _repository.GetByEmail(userEmail);
+            User? userEdited = _mapper.Map(request, userToEdit);
+            await _repository.Update(userEdited);
+            return userEdited;
         }
-        public void Delete(string email)
+
+        public async Task DeleteUserByEmail(string email)
         {
-            _repository.DeleteByEmail(email);
+            User? userToDelete = await _repository.GetByEmail(email);
+            if (userToDelete == null) { throw new NotFoundException("Usuario no encontrado."); }
+            await _repository.DeleteByEmail(email);
         }
-     
+
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Application.Dtos.ProyectDtos;
-using Application.Services;
+using Application.Interfaces;
 using Domain.Entities;
+using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,15 +12,19 @@ namespace CleanArchitectureAPI.Controllers
     [Authorize]
     public class ProyectController : ControllerBase
     {
-        private readonly ProyectService _service;
-        public ProyectController(ProyectService service)
+        private readonly IProyectService _service; 
+        private readonly IValidator<ProyectForAddDto> _validator;
+        private readonly IValidator<ProyectForEditDto> _validatorForEdit;
+        public ProyectController(IProyectService service, IValidator<ProyectForAddDto> validator, IValidator<ProyectForEditDto> validatorForEdit)
         {
             _service = service;
+            _validator = validator;
+            _validatorForEdit = validatorForEdit;
         }
         [HttpGet("GetByTitle/{title}", Name = "GetProyectByTitle")]
-        public IActionResult GetProyectByTitle([FromRoute] string title)
+        public async Task<IActionResult> GetProyectByTitle([FromRoute] string title)
         {
-            Proyect? proyect = _service.GetByTitle(title);
+            Proyect? proyect = await _service.GetByTitle(title);
             if (proyect == null)
             {
                 return NotFound("Proyecto no encontrado");
@@ -27,9 +32,9 @@ namespace CleanArchitectureAPI.Controllers
             return Ok(proyect);
         }
         [HttpGet("GetById{id}")]
-        public IActionResult Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
-            var proyect = _service.Get(id);
+            Proyect? proyect = await _service.Get(id);
             if (proyect == null)
             {
                 return NotFound("Proyecto no encontrado");
@@ -37,33 +42,45 @@ namespace CleanArchitectureAPI.Controllers
             return Ok(proyect);
         }
         [HttpGet("GetAll")]
-        public IActionResult Get()
+        public async Task<IActionResult> Get()
         {
-            return Ok(_service.Get());
+            return Ok(await _service.Get());
         }
         [HttpPost("Create")]
-        public IActionResult Add([FromBody] ProyectForAddDto body)
+        public async Task<IActionResult> Add([FromBody] ProyectForAddDto body)
         {
+            var validationResult = await _validator.ValidateAsync(body);
+            if (!validationResult.IsValid) 
+            {
+                return BadRequest(validationResult.Errors.Select(e => e.ErrorMessage));
+            }
+
             string? userEmail = User.Claims.FirstOrDefault(c => c.Type.Contains("nameidentifier"))?.Value;
-            Proyect createdProyect = _service.Add(body, userEmail);
+            Proyect createdProyect = await _service.Add(body, userEmail);
             return CreatedAtRoute(nameof(GetProyectByTitle), new { title = createdProyect.Title }, createdProyect);
         }
 
         [HttpPut("UpdateByTitle/{title}")]
-        public IActionResult UpdateProyect([FromRoute] string title, [FromBody] ProyectForEditDto body)
+        public async Task<IActionResult> UpdateProyect([FromRoute] string title, [FromBody] ProyectForEditDto body)
         {
+            var validationResult = await _validatorForEdit.ValidateAsync(body);
+            if (!validationResult.IsValid)
+            {
+                return BadRequest(validationResult.Errors.Select(e => e.ErrorMessage));
+            }
+
             string? userEmail = User.Claims.FirstOrDefault(c => c.Type.Contains("nameidentifier"))?.Value;
             if (body == null) { return BadRequest(); }
-            _service.Update(body, title, userEmail);
+            await _service.Update(body, title, userEmail);
             return Ok(body);
             
         }
 
         [HttpDelete("DeleteByTitle/{title}")]
-        public IActionResult Delete([FromRoute] string title) 
+        public async Task<IActionResult> Delete([FromRoute] string title) 
         {
             string? userEmail = User.Claims.FirstOrDefault(c => c.Type.Contains("nameidentifier"))?.Value;
-            _service.Delete(title, userEmail);
+            await _service.Delete(title, userEmail);
             return Ok("Proyecto eliminado correctamente.");
         }
     }

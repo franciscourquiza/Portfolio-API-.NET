@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography.X509Certificates;
 using Domain.Exceptions;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories
 {
@@ -17,19 +18,19 @@ namespace Infrastructure.Repositories
         {
             _context = context;
         }
-        public Proyect? GetByTitle(string title)
+        public async Task<Proyect?> GetByTitle(string title)
         {
-            return _context.Proyects.FirstOrDefault(t => t.Title == title);
+            return await _context.Proyects.FirstOrDefaultAsync(t => t.Title == title);
         }
-        public void Delete(string title)
+        public async Task Delete(string title)
         {
-            Proyect? proyectToDelete = GetByTitle(title);
+            Proyect? proyectToDelete = await GetByTitle(title);
             if (proyectToDelete == null)
             {
                 throw new ArgumentNullException(nameof(proyectToDelete));
             }
             _context.Proyects.Remove(proyectToDelete);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
     }
 }

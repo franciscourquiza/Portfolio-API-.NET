@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Application.Services;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using Domain.Entities;
 using Application.Dtos.AuthDtos;
-using Microsoft.AspNetCore.Authorization;
 using System.Net;
+using Application.Interfaces;
+using FluentValidation;
 
 namespace CleanArchitectureAPI.Controllers
 {
@@ -16,24 +16,34 @@ namespace CleanArchitectureAPI.Controllers
     public class AuthenticationController : ControllerBase
     {
         private readonly IConfiguration _configuration;
-        private readonly AuthenticationService _service;
-        
-        public AuthenticationController(IConfiguration configuration, AuthenticationService service)
+        private readonly IAuthenticationService _service;
+        private readonly IValidator<AuthenticationBodyRequest> _validator;
+        private readonly IValidator<ResetPasswordRequest> _validatorForResetPassword;
+
+        public AuthenticationController(IConfiguration configuration, IAuthenticationService service, IValidator<AuthenticationBodyRequest> validator, IValidator<ResetPasswordRequest> validatorForResetPassword)
         {
             _configuration = configuration;
             _service = service;
+            _validator = validator;
+            _validatorForResetPassword = validatorForResetPassword;
         }
 
         [HttpPost("Login")]
-        public IActionResult Authenticate([FromBody] AuthenticationBodyRequest credentials)
+        public async Task<IActionResult> Authenticate([FromBody] AuthenticationBodyRequest credentials)
         {
-            Tuple<bool, User?> validationResponse = _service.ValidateUser(credentials.Email, credentials.Password);
+            var validationResult = await _validator.ValidateAsync(credentials);
+            if (!validationResult.IsValid)
+            {
+                return BadRequest(validationResult.Errors.Select(e => e.ErrorMessage));
+            }
+
+            Tuple<bool, User?> validationResponse = await _service.ValidateUser(credentials.Email, credentials.Password);
             if (!validationResponse.Item1 && validationResponse.Item2 == null)
             {
                 return NotFound("Email no existente");
             }
             else if (!validationResponse.Item1 && validationResponse.Item2 != null)
-                return Unauthorized("Contraseña incorrecta");
+                return Unauthorized("Los datos ingresados no son correctos.");
 
             var securityPassword = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_configuration["Authentication:SecretForKey"]));
             var credentialsForLogin = new SigningCredentials(securityPassword, SecurityAlgorithms.HmacSha256);
@@ -41,7 +51,7 @@ namespace CleanArchitectureAPI.Controllers
             var claimsForToken = new List<Claim>();
             claimsForToken.Add(new Claim("sub", validationResponse.Item2.Email));
             claimsForToken.Add(new Claim("given_name", validationResponse.Item2.Name));
-            claimsForToken.Add(new Claim("role", validationResponse.Item2.UserRole)); // cambiar mas adelante
+            claimsForToken.Add(new Claim("role", validationResponse.Item2.UserRole)); 
 
             var jwtToken = new JwtSecurityToken(
             _configuration["Authentication:Issuer"],
@@ -60,6 +70,12 @@ namespace CleanArchitectureAPI.Controllers
         [HttpPost("RequestEmailForResetPassword")]
         public async Task<ActionResult<ResetPasswordResponse<bool>>> ResetPassword([FromBody] ResetPasswordRequest request)
         {
+            var validationResult = await _validatorForResetPassword.ValidateAsync(request);
+            if (!validationResult.IsValid) 
+            {
+                return BadRequest(validationResult.Errors.Select(e => e.ErrorMessage));
+            }
+
             if (string.IsNullOrWhiteSpace(request.Email))
             {
                 throw new ArgumentException("Email cannot be null or whitespace.");

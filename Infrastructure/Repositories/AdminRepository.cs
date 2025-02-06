@@ -1,10 +1,12 @@
 ﻿using Domain.Entities;
 using Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Infrastructure.Repositories
 {
@@ -15,18 +17,14 @@ namespace Infrastructure.Repositories
         {
             _context = context;
         }
-        public Admin? Get(string name)
+        public async Task<Admin?> GetByName(string name)
         {
-            return _context.Admins.FirstOrDefault(u => u.Name == name);
+            return await _context.Admins.FirstOrDefaultAsync(u => u.Name == name && u.UserRole == "Admin");
         }
-        public Admin? GetByEmail(string email)
+        public async Task<Admin?> GetByEmail(string email)
         {
-            return _context.Admins.FirstOrDefault(u => u.Email == email);
+            return await _context.Admins.FirstOrDefaultAsync(u => u.Email == email && u.UserRole == "Admin");
         }
-        public void AddAdmin(User user)
-        {
-            _context.Users.Add(user);
-            _context.SaveChanges();
-        }
+
     }
 }

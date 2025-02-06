@@ -1,9 +1,8 @@
 ﻿using Application.Dtos.AdminDtos;
-using Application.Services;
-using Domain.Entities;
+using Application.Interfaces;
+using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Xml.Linq;
 
 namespace CleanArchitectureAPI.Controllers
 {
@@ -12,91 +11,97 @@ namespace CleanArchitectureAPI.Controllers
     [Authorize]
     public class AdminController : ControllerBase
     {
-        private readonly AdminService _service;
-        public AdminController(AdminService service)
+        private readonly IAdminService _service;
+        private readonly IValidator<AdminForAddDto> _validator;
+        private readonly IValidator<AdminForEditDto> _validatorForEdit;
+        public AdminController(IAdminService service, IValidator<AdminForAddDto> validator, IValidator<AdminForEditDto> validatorForEdit)
         {
             _service = service;
+            _validator = validator;
+            _validatorForEdit = validatorForEdit;
         }
 
         [HttpGet("GetByName/{name}")]
-        public IActionResult GetByName([FromRoute] string name)
+        public async Task<IActionResult> GetAdminByName([FromRoute] string name)
         {
-            string userRole = User.Claims.FirstOrDefault(c => c.Type.Contains("role")).Value;
-            Admin? user = _service.Get(name);
-            if (userRole == "SuperAdmin")
+            string role = User.Claims.FirstOrDefault(c => c.Type.Contains("role")).Value;
+            if (role == "SuperAdmin")
             {
-                return Ok(user);
-            }
-            if (user == null)
-            {
-                return NotFound("Admin no encontrado");
+                return Ok(await _service.GetAdminByName(name));
             }
             return Forbid();
         }
 
         [HttpGet("GetByEmail/{email}", Name = nameof(GetAdminByEmail))]
-        public IActionResult GetAdminByEmail([FromRoute] string email)
+        public async Task<IActionResult> GetAdminByEmail([FromRoute] string email)
         {
-            string userRole = User.Claims.FirstOrDefault(c => c.Type.Contains("role")).Value;
-            Admin? user = _service.GetByEmail(email);
-            if (userRole == "SuperAdmin")
+            string role = User.Claims.FirstOrDefault(c => c.Type.Contains("role")).Value;
+            if (role == "SuperAdmin")
             {
-                return Ok(user);
-            }
-            if (user == null)
-            {
-                return NotFound("Admin no encontrado");
+                return Ok(await _service.GetAdminByEmail(email));
             }
             return Forbid();
         }
 
         [HttpGet("GetAll")]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            string userRole = User.Claims.FirstOrDefault(c => c.Type.Contains("role")).Value;
-            if (userRole == "SuperAdmin")
+            string role = User.Claims.FirstOrDefault(c => c.Type.Contains("role")).Value;
+            if (role == "SuperAdmin")
             {
-                return Ok(_service.Get());
+                return Ok(await _service.GetAllAdmins());
             }
             return Forbid();
         }
 
         [HttpPost("Create")]
-        public IActionResult AddAdmin([FromBody] AdminForAddDto body)
+        public async Task<IActionResult> AddAdmin([FromBody] AdminForAddDto body)
         {
-            if (_service.GetByEmail(body.Email) != null)
+            var validationResult = await _validator.ValidateAsync(body);
+            if (!validationResult.IsValid)
             {
-                return Conflict("El email ya está en uso.");
+                return BadRequest(validationResult.Errors.Select(e => e.ErrorMessage));
             }
-            if (body == null)
+
+            string role = User.Claims.FirstOrDefault(c => c.Type.Contains("role")).Value;
+            if (role == "SuperAdmin")
             {
-                return BadRequest();
+                if (await _service.GetAdminForCreation(body.Email) != null)
+                {
+                    return Conflict("El email ya está en uso.");
+                }
+                await _service.AddAdmin(body);
+                return CreatedAtRoute(nameof(GetAdminByEmail), new { email = body.Email }, body);
             }
-            _service.AddAdmin(body);
-            return CreatedAtRoute(nameof(GetAdminByEmail), new { email = body.Email }, body);
+            return Forbid();
         }
 
         [HttpPut("UpdateByEmail/{email}")]
-        public IActionResult UpdateAdmin([FromBody] AdminForEditDto body, [FromRoute] string email)
+        public async Task<IActionResult> UpdateAdmin([FromBody] AdminForEditDto body, [FromRoute] string email)
         {
-            string userRole = User.Claims.SingleOrDefault(c => c.Type.Contains("role")).Value;
-            if (body == null) { return BadRequest(); }
-            if (userRole == "SuperAdmin")
+            var validationResult = await _validatorForEdit.ValidateAsync(body);
+            if (!validationResult.IsValid)
             {
-                _service.Update(body, email);
+                return BadRequest(validationResult.Errors.Select(e => e.ErrorMessage));
+            }
+
+            string role = User.Claims.FirstOrDefault(c => c.Type.Contains("role")).Value;
+            if (role == "SuperAdmin")
+            {
+                await _service.UpdateAdmin(body, email);
                 return Ok();
             }
             return Forbid();
         }
 
         [HttpDelete("DeleteByEmail/{email}")]
-        public IActionResult DeleteUserByEmail([FromRoute] string email)
+        public async Task<IActionResult> DeleteAdminByEmail([FromRoute] string email)
         {
-            string role = User.Claims.SingleOrDefault(c => c.Type.Contains("role")).Value;
+            string role = User.Claims.FirstOrDefault(c => c.Type.Contains("role")).Value;
             if (role == "SuperAdmin")
             {
-                _service.Delete(email);
-                return NoContent();
+                await _service.DeleteAdminByEmail(email);
+                return Ok("Se eliminó exitosamente el admin.");
             }
             return Forbid();
         }

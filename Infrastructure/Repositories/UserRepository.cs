@@ -1,6 +1,7 @@
 ﻿using Domain.Entities;
 using Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Xml.Linq;
 
 
 namespace Infrastructure.Repositories
@@ -12,31 +13,13 @@ namespace Infrastructure.Repositories
         { 
             _context = context;
         }
-        public User? Get(string name)
+        public async Task<User?> GetByName(string name)
         {
-            return _context.Users.FirstOrDefault(u => u.Name == name);
+            return await _context.Users.FirstOrDefaultAsync(u => u.Name == name);
         }
-        public User? GetByEmail(string email)
+        public async Task<User?> GetByEmail(string email)
         {
-              return _context.Users.FirstOrDefault(u => u.Email == email);
-        }
-        public async Task<User> GetByEmailAsync(string email)
-        {
-            try
-            {
-                User? user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
-                return user;
-            }
-            catch
-            {
-                throw;
-            }
-        }
-
-        public void UpdateUser(User user)
-        {
-            _context.Users.Update(user);
-            _context.SaveChanges();
+            return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
         }
     }
 }

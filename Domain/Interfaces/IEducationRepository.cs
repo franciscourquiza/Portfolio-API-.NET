@@ -10,7 +10,7 @@ namespace Domain.Interfaces
 {
     public interface IEducationRepository : IBaseRepository<Education>
     {
-        Education? GetByTitle(string title);
-        void Delete(string title);
+        Task<Education?> GetByTitle(string title);
+        Task Delete(string title);
     }
 }

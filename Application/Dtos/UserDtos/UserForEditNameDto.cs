@@ -9,8 +9,6 @@ namespace Application.Dtos.UserDtos
 {
     public class UserForEditNameRequest
     {
-        [Required]
-        [RegularExpression("^[a-zA-Z ]+$", ErrorMessage = "El campo debe contener solo letras.")]
         public string Name { get; set; }
     }
 }

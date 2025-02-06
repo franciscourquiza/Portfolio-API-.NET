@@ -8,12 +8,11 @@ namespace Domain.Interfaces
 {
     public interface IBaseRepository<T> where T : class
     {
-        T? Get<TId>(TId id);
-        List<T> Get();
-        void Add(T entity);
-        void Update(T entity);
-        void DeleteByEmail<TEmail>(TEmail email);
+        Task<T?> Get<TId>(TId id);
+        Task<List<T>> Get();
+        Task<T> Add(T entity);
+        Task<T> Update(T entity);
+        Task DeleteByEmail<TEmail>(TEmail email);
         Task<bool> Delete(T entity);
-        Task<bool> UpdateAsync(T entity);
     }
 }

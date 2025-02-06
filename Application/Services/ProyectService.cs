@@ -1,42 +1,36 @@
 ﻿using Application.Dtos.ProyectDtos;
+using Application.Interfaces;
 using AutoMapper;
 using Domain.Entities;
 using Domain.Exceptions;
 using Domain.Interfaces;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Services
 {
-    public class ProyectService
+    public class ProyectService : IProyectService
     {
         private readonly IProyectRepository _repository;
         private readonly IMapper _mapper;
-        private readonly IUserRepository _userRepository;
-        public ProyectService(IProyectRepository repository, IMapper mapper, IUserRepository userRepository)
+        public ProyectService(IProyectRepository repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;
-            _userRepository = userRepository;
         }
-        public Proyect? GetByTitle(string title) 
+        public async Task<Proyect?> GetByTitle(string title) 
         {
-            return _repository.GetByTitle(title);
+            Proyect? proyect = await _repository.GetByTitle(title);
+            return proyect;
         }
-        public Proyect? Get(int id) 
+        public async Task<Proyect?> Get(int id) 
         {
-            return _repository.Get(id);
+            Proyect? proyect = await _repository.Get(id);
+            return proyect;
         }
-        public List<Proyect> Get() 
+        public async Task<List<Proyect>> Get() 
         {
-            return _repository.Get();
+            return await _repository.Get();
         }
-        public Proyect Add(ProyectForAddDto request, string userEmail) 
+        public async Task<Proyect> Add(ProyectForAddDto request, string userEmail) 
         {
             if (request == null)
             {
@@ -46,32 +40,34 @@ namespace Application.Services
             Proyect proyect = _mapper.Map<Proyect>(request);
             proyect.UserEmail = userEmail;
            
-            _repository.Add(proyect);
+            await _repository.Add(proyect);
             return proyect;
         }
-        public void Update(ProyectForEditDto request, string title, string userEmail)
+        public async Task<Proyect> Update(ProyectForEditDto request, string title, string userEmail)
         {
-            Proyect proyectToEdit = _repository.GetByTitle(title);
+            Proyect? proyectToEdit = await _repository.GetByTitle(title);
             if (proyectToEdit == null)
             {
                 throw new InvalidOperationException("No se encontró el proyecto.");
-            }
-            if (userEmail == proyectToEdit.UserEmail)
-            {
-                Proyect proyectEdited = _mapper.Map(request, proyectToEdit);
-                _repository.Update(proyectEdited);
             }
             if (userEmail != proyectToEdit.UserEmail)
             {
                 throw new InvalidOperationException("Este proyecto no pertenece a tu usuario.");
             }
+            Proyect proyectEdited = _mapper.Map(request, proyectToEdit);
+            await _repository.Update(proyectEdited);
+            return proyectEdited;
         }
-        public void Delete(string title, string userEmail) 
+        public async Task Delete(string title, string userEmail) 
         {
-            Proyect? proyect = _repository.GetByTitle(title);
+            Proyect? proyect = await _repository.GetByTitle(title);
+            if (proyect == null)
+            {
+                throw new NotFoundException("No se encontró un proyecto con ese título.");
+            }
             if (userEmail == proyect.UserEmail)
             {
-                _repository.Delete(title);
+                await _repository.Delete(title);
             }
             if (userEmail != proyect.UserEmail)
             {

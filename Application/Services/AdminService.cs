@@ -1,91 +1,92 @@
 ﻿using Application.Dtos.AdminDtos;
+using Application.Interfaces;
 using AutoMapper;
 using Domain.Entities;
+using Domain.Exceptions;
 using Domain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Services
 {
-    public class AdminService
+    public class AdminService : IAdminService
     {
         public readonly IAdminRepository _repository;
         private readonly IMapper _mapper;
-        private readonly IUserRepository _userRepository;
-        public AdminService(IAdminRepository repository, IMapper mapper, IUserRepository userRepository)
+        public AdminService(IAdminRepository repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;
-            _userRepository = userRepository;
         }
-        public Admin? Get(string name)
+        public async Task<Admin?> GetAdminByName(string name)
         {
-            Admin? user = _repository.Get(name);
-            if (user == null) 
+            Admin? adminToSearch = await _repository.GetByName(name);
+            if (adminToSearch == null) 
             {
-                return null;
+                throw new NotFoundException("No se encontró el admin.");
             }
-            return user;
+            return adminToSearch;
         }
-        public Admin? GetByEmail(string email)
+        public async Task<Admin?> GetAdminForCreation(string email)
         {
-            Admin? user = GetEmailForCreation(email);
-            return user;
+            Admin? adminToSearch = await _repository.GetByEmail(email);
+            return adminToSearch;
         }
-        public Admin? GetEmailForCreation(string email)
+        public async Task<Admin?> GetAdminByEmail(string email)
         {
-            return _repository.GetByEmail(email);
+            Admin? adminToSearch = await _repository.GetByEmail(email);
+            if (adminToSearch == null)
+            {
+                throw new NotFoundException("No se encontró el admin");
+            }
+            return adminToSearch;
         }
-        public List<Admin> Get()
+        public async Task<List<Admin>> GetAllAdmins()
         {
-            return _repository.Get();
+            return await _repository.Get();
         }
-        public User AddAdmin(AdminForAddDto request)
+        public async Task<Admin> AddAdmin(AdminForAddDto request)
         {
             if (request == null)
             {
                 throw new ArgumentNullException(nameof(request));
             }
-            User? userForAdmin = new User()
+            Admin? userForAdmin = new Admin()
             {
                 Email = request.Email,
                 Adress = request.Adress,
                 Age = request.Age,
                 City = request.City,
-                Country = request.Country,  
+                Country = request.Country,
                 GitHubLink = request.GitHubLink,
                 LinkedInLink = request.LinkedInLink,
                 Name = request.Name,
                 Password = request.Password,
-                Phone = request.Phone,  
+                Phone = request.Phone,
                 State = request.State,
                 Summary = request.Summary,
                 UserRole = "Admin",
             };
-            _repository.AddAdmin(userForAdmin);
+            await _repository.Add(userForAdmin);
             return userForAdmin;
         }
-        public void Update(AdminForEditDto request, string email)
+        public async Task<Admin> UpdateAdmin(AdminForEditDto request, string email)
         {
-            Admin adminToEdit = _repository.GetByEmail(email);
+            Admin? adminToEdit = await _repository.GetByEmail(email);
             if (adminToEdit == null)
             {
-                throw new ArgumentNullException(nameof(email));
+                throw new NotFoundException("No se encontró el admin.");
             }
             Admin adminEdited = _mapper.Map(request, adminToEdit);
-            _repository.Update(adminEdited);
+            await _repository.Update(adminEdited);
+            return adminEdited;
         }
-        public void Delete(string email)
+        public async Task DeleteAdminByEmail(string email)
         {
-            var entity = _repository.GetByEmail(email);
-            if (entity == null)
+            Admin? adminToDelete = await _repository.GetByEmail(email);
+            if (adminToDelete == null) 
             {
-                throw new ArgumentNullException(nameof(entity));
+                throw new NotFoundException("No se encontró el admin.");
             }
-            _repository.DeleteByEmail(email);
+            await _repository.DeleteByEmail(email);
         }
     }
 }

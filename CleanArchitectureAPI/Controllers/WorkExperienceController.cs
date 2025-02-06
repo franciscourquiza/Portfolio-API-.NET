@@ -1,6 +1,7 @@
 ﻿using Application.Dtos.WorkExperienceDtos;
-using Application.Services;
+using Application.Interfaces;
 using Domain.Entities;
+using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,16 +12,20 @@ namespace CleanArchitectureAPI.Controllers
     [Authorize]
     public class WorkExperienceController : ControllerBase
     {
-        private readonly WorkExperienceService _service;
-        public WorkExperienceController(WorkExperienceService service)
+        private readonly IWorkExperienceService _service;
+        private readonly IValidator<WorkExperienceForAdd> _validator;
+        private readonly IValidator<WorkExperienceForEditDto> _validatorForEdit;
+        public WorkExperienceController(IWorkExperienceService service, IValidator<WorkExperienceForAdd> validator, IValidator<WorkExperienceForEditDto> validatorForEdit)
         {
             _service = service;
+            _validator = validator;
+            _validatorForEdit = validatorForEdit;
         }
 
         [HttpGet("GetByTitle/{title}", Name = "GetWorkExperienceByTitle")]
-        public IActionResult GetWorkExperienceByTitle([FromRoute]string title)
+        public async Task<IActionResult> GetWorkExperienceByTitle([FromRoute]string title)
         {
-            var workExperience = _service.Get(title);
+            WorkExperience? workExperience = await _service.Get(title);
             if (workExperience == null)
             {
                 return NotFound("Experiencia laboral no encontrada");
@@ -29,9 +34,9 @@ namespace CleanArchitectureAPI.Controllers
         }
 
         [HttpGet("GetById/{id}")]
-        public IActionResult Get([FromRoute]int id) 
+        public async Task<IActionResult> GetWorkExperienceById([FromRoute]int id) 
         {
-            var workExperience = _service.Get(id);
+            WorkExperience? workExperience = await _service.Get(id);
             if (workExperience == null)
             {
                 return NotFound("Experiencia laboral no encontrada");
@@ -40,35 +45,47 @@ namespace CleanArchitectureAPI.Controllers
         }
 
         [HttpGet("GetAll")]
-        public IActionResult GetAll() 
+        public async Task<IActionResult> GetAll() 
         {
-            return Ok(_service.Get());
+            return Ok(await _service.Get());
         }
 
         [HttpPost("Create")]
-        public IActionResult AddWorkExperience([FromBody]WorkExperienceForAdd request) 
+        public async Task<IActionResult> AddWorkExperience([FromBody]WorkExperienceForAdd request) 
         {
-            string userEmail = User.Claims.FirstOrDefault(c => c.Type.Contains("nameidentifier")).Value;
-            WorkExperience createdWorkExperience = _service.AddWorkExperience(request, userEmail);
+            var validationResult = await _validator.ValidateAsync(request);
+            if (!validationResult.IsValid)
+            {
+                return BadRequest(validationResult.Errors.Select(e => e.ErrorMessage));
+            }
 
-            return CreatedAtRoute(nameof(GetWorkExperienceByTitle), new { title = createdWorkExperience.Title }, createdWorkExperience);
+            string userEmail = User.Claims.FirstOrDefault(c => c.Type.Contains("nameidentifier")).Value;
+            WorkExperience? createdWorkExperience = await _service.AddWorkExperience(request, userEmail);
+
+            return CreatedAtRoute(nameof(GetWorkExperienceByTitle), new { title = createdWorkExperience?.Title }, createdWorkExperience);
         }
 
         [HttpPut("UpdateByTitle/{title}")]
-        public IActionResult UpdateWorkExperience([FromRoute] string title, [FromBody] WorkExperienceForEditDto body)
+        public async Task<IActionResult> UpdateWorkExperience([FromRoute] string title, [FromBody] WorkExperienceForEditDto body)
         {
+            var validationResult = await _validatorForEdit.ValidateAsync(body);
+            if (!validationResult.IsValid)
+            {
+                return BadRequest(validationResult.Errors.Select(e => e.ErrorMessage));
+            }
+
             string? userEmail = User.Claims.FirstOrDefault(c => c.Type.Contains("nameidentifier"))?.Value;
             if (body == null) { return BadRequest(); }
-            _service.Update(body, title, userEmail);
+            await _service.Update(body, title, userEmail);
             return Ok(body);
 
         }
 
         [HttpDelete("DeleteByTitle/{title}")]
-        public IActionResult Delete([FromRoute] string title) 
+        public async Task<IActionResult> Delete([FromRoute] string title) 
         {
             string? userEmail = User.Claims.FirstOrDefault(c => c.Type.Contains("nameidentifier"))?.Value;
-            _service.Delete(title, userEmail);
+            await _service.Delete(title, userEmail);
             return Ok("La experiencia laboral fue eliminada correctamente.");
         }
     }

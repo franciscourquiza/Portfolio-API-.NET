@@ -1,6 +1,7 @@
 ﻿using Application.Dtos.EducationDtos;
-using Application.Services;
+using Application.Interfaces;
 using Domain.Entities;
+using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,59 +12,73 @@ namespace CleanArchitectureAPI.Controllers
     [Authorize]
     public class EducationController : ControllerBase
     {
-        private readonly EducationService _service;
-        public EducationController(EducationService service)
+        private readonly IEducationService _service;
+        private readonly IValidator<EducationForAddDto> _validator;
+        private readonly IValidator<EducationForEditDto> _validatorForEdit;
+        public EducationController(IEducationService service, IValidator<EducationForAddDto> validator, IValidator<EducationForEditDto> validatorForEdit)
         {
             _service = service;
+            _validator = validator; 
+            _validatorForEdit = validatorForEdit;
         }
         [HttpGet("GetByTitle/{title}", Name ="GetEducationByTitle")]
-        public IActionResult GetEducationByTitle([FromRoute] string title)
+        public async Task<IActionResult> GetEducationByTitle([FromRoute] string title)
         {
-            Education? education = _service.GetByTitle(title);
+            Education? education = await _service.GetByTitle(title);
             if (education == null)
             {
-                return NotFound("Educación no encontrada");
+                return NotFound("Educación no encontrada.");
             }
             return Ok(education);
         }
         [HttpGet("GetById/{id}")]
-        public IActionResult Get([FromRoute] int id)
+        public async Task<IActionResult> GetEducationById([FromRoute] int id)
         {
-            var education = _service.Get(id);
-            if (education == null) { return NotFound("Educación no encontrada"); }
+            var education = await _service.GetById(id);
+            if (education == null) { return NotFound("Educación no encontrada."); }
             return Ok(education);
         }
 
         [HttpGet("GetAll")]
-        public IActionResult Get()
+        public async Task<IActionResult> GetAll()
         {
-            return Ok(_service.Get());
+            return Ok(await _service.Get());
         }
 
         [HttpPost("Create")]
-        public IActionResult Add([FromBody] EducationForAddDto body)
+        public async Task<IActionResult> AddEducation([FromBody] EducationForAddDto body)
         {
+            var validationResult = _validator.Validate(body);
+            if (!validationResult.IsValid) 
+            {
+                return BadRequest(validationResult.Errors.Select(e => e.ErrorMessage));
+            }
+
             string userEmail = User.Claims.FirstOrDefault(c => c.Type.Contains("nameidentifier")).Value;
-            Education createdEducation = _service.Add(body, userEmail);
+            Education createdEducation = await _service.Add(body, userEmail);
 
             return CreatedAtRoute(nameof(GetEducationByTitle), new { title = createdEducation.Title }, createdEducation);
         }
 
         [HttpPut("UpdateByTitle/{title}")]
-        public IActionResult UpdateEducation([FromRoute] string title, [FromBody] EducationForEditDto body)
+        public async Task<IActionResult> UpdateEducation([FromRoute] string title, [FromBody] EducationForEditDto body)
         {
+            var validationResult = _validatorForEdit.Validate(body);
+            if (!validationResult.IsValid)
+            {
+                return BadRequest(validationResult.Errors.Select(e => e.ErrorMessage));
+            }
+
             string? userEmail = User.Claims.FirstOrDefault(c => c.Type.Contains("nameidentifier"))?.Value;
             if (body == null) { return BadRequest(); }
-            _service.Update(body, title, userEmail);
-            return Ok(body);
-
+            return Ok(await _service.Update(body, title, userEmail));
         }
 
         [HttpDelete("DeleteByTitle/{title}")]
-        public IActionResult Delete([FromRoute] string title)
+        public async Task<IActionResult> Delete([FromRoute] string title)
         {
             string? userEmail = User.Claims.FirstOrDefault(c => c.Type.Contains("nameidentifier"))?.Value;
-            _service.Delete(title, userEmail);
+            await _service.Delete(title, userEmail);
             return Ok("Educación eliminada correctamente.");
         }
     }

@@ -1,21 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MailKit.Security;
+﻿using MailKit.Security;
 using MimeKit;
-using MimeKit.Text;
-using Newtonsoft.Json.Linq;
 using System.Net;
 using Microsoft.Extensions.Configuration;
 using Domain.Entities;
 using MailKit.Net.Smtp;
-
+using Application.Interfaces;
 
 namespace Application.Services
 {
-    public class EmailService
+    public class EmailService : IEmailService
     {
         private readonly IConfiguration _configuration;
         public EmailService(IConfiguration configuration)
@@ -64,7 +57,7 @@ namespace Application.Services
                     var emailBody = $@"
                         <html>
                         <body>
-                            <p>Reseting Password. Please click the link below to reset the passward account:</p>
+                            <p>Reseting Password. Please click the link below to reset the password account:</p>
                             <p>{clickableLink}</p>
                             <p>After click on the link you will receive your new password on your email</p>
                         </body>

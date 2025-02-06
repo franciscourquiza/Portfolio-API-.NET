@@ -9,7 +9,7 @@ namespace Domain.Interfaces
 {
     public interface IProyectRepository : IBaseRepository<Proyect>
     {
-        Proyect? GetByTitle(string title);
-        void Delete(string title);
+        Task<Proyect?> GetByTitle(string title);
+        Task Delete(string title);
     }
 }

@@ -9,8 +9,7 @@ namespace Domain.Interfaces
 {
     public interface IAdminRepository : IBaseRepository<Admin>
     {
-        Admin? GetByEmail(string email);
-        Admin? Get(string name);
-        void AddAdmin(User user);
+        Task<Admin?> GetByName(string name);
+        Task<Admin?> GetByEmail(string email);
     }
 }

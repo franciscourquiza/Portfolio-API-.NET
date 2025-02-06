@@ -17,43 +17,33 @@ namespace Infrastructure.Repositories
         {
             _context = context;
         }
-        public T? Get<TId>(TId id)
+        public async Task<T?> Get<TId>(TId id)
         {
-            return _context.Set<T>().Find(new object?[] { id });
+            var entity = await _context.Set<T>().FindAsync(new object?[] { id });
+            return entity;
         }
-        public List<T> Get()
+        public async Task<List<T>> Get()
         {
-            return _context.Set<T>().ToList();
+            List<T> list = await _context.Set<T>().ToListAsync();
+            return list;
         }
-        public void Add(T entity)
+        public async Task<T> Add(T entity)
         {
             _context.Set<T>().Add(entity);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
+            return entity;
         }
-        public void Update(T entity)
+        public async Task<T> Update(T entity)
         {
             _context.Set<T>().Update(entity);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
+            return entity;
         }
-        public async Task<bool> UpdateAsync(T entity)
-        {
-            try
-            {
-                _context.Set<T>().Update(entity);
-                await _context.SaveChangesAsync();
-                return true;
-            }
-            catch
-            {
-                throw;
-            }
-            
-        }
-        public void DeleteByEmail<TEmail>(TEmail email) 
+        public async Task DeleteByEmail<TEmail>(TEmail email) 
         {
             var entity = _context.Set<T>().Find(new object?[] { email });
             _context.Set<T>().Remove(entity);   
-            _context.SaveChanges();  
+            await _context.SaveChangesAsync();  
         }
 
         public async Task<bool> Delete(T entity)

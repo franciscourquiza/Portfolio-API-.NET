@@ -1,46 +1,39 @@
 ﻿using Application.Dtos.WorkExperienceDtos;
+using Application.Interfaces;
 using AutoMapper;
 using Domain.Entities;
+using Domain.Exceptions;
 using Domain.Interfaces;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Services
 {
-    public class WorkExperienceService
+    public class WorkExperienceService : IWorkExperienceService
     {
         private readonly IWorkExperienceRepository _repository;
         private readonly IMapper _mapper;
-        private readonly IUserRepository _userRepository;
-        public WorkExperienceService(IWorkExperienceRepository repository, IMapper mapper, IUserRepository userRepository) 
+        public WorkExperienceService(IWorkExperienceRepository repository, IMapper mapper) 
         { 
             _repository = repository; 
             _mapper = mapper;
-            _userRepository = userRepository;
         }
 
-        public WorkExperience? Get(string title) 
+        public async Task<WorkExperience?> Get(string title) 
         {
-            return _repository.GetByTitle(title);
+            return await _repository.GetByTitle(title);
         }
 
-        public WorkExperience? Get(int id) 
+        public async Task<WorkExperience?> Get(int id) 
         {
-            return _repository.Get(id);
+            return await _repository.Get(id);
+            
         }
 
-        public List<WorkExperience> Get() 
+        public async Task<List<WorkExperience>> Get() 
         {
-            return _repository.Get();
+            return await _repository.Get();
         }
 
-        public WorkExperience AddWorkExperience(WorkExperienceForAdd request, string userEmail) 
+        public async Task<WorkExperience?> AddWorkExperience(WorkExperienceForAdd request, string userEmail) 
         {
             if (request == null)
             {
@@ -50,34 +43,36 @@ namespace Application.Services
             WorkExperience workExperience = _mapper.Map<WorkExperience>(request);
             workExperience.UserEmail = userEmail;
 
-            _repository.Add(workExperience);
+            await _repository.Add(workExperience);
             return workExperience;
         }
 
-        public void Update(WorkExperienceForEditDto request, string title, string userEmail)
+        public async Task<WorkExperience?> Update(WorkExperienceForEditDto request, string title, string userEmail)
         {
-            WorkExperience workExperienceToEdit = _repository.GetByTitle(title);
+            WorkExperience? workExperienceToEdit = await _repository.GetByTitle(title);
             if (workExperienceToEdit == null)
             {
                 throw new InvalidOperationException("No se encontró la experiencia laboral.");
-            }
-            if (userEmail == workExperienceToEdit.UserEmail)
-            {
-                WorkExperience workExperienceEdited = _mapper.Map(request, workExperienceToEdit);
-                _repository.Update(workExperienceEdited);
             }
             if (userEmail != workExperienceToEdit.UserEmail)
             {
                 throw new InvalidOperationException("Esta experiencia laboral no pertenece a tu usuario.");
             }
+            WorkExperience workExperienceEdited = _mapper.Map(request, workExperienceToEdit);
+            await _repository.Update(workExperienceEdited);
+            return workExperienceEdited;
         }
         
-        public void Delete(string title, string userEmail) 
+        public async Task Delete(string title, string userEmail) 
         {
-            WorkExperience? workExperience = _repository.GetByTitle(title);
+            WorkExperience? workExperience = await _repository.GetByTitle(title);
+            if (workExperience == null)
+            {
+                throw new NotFoundException("No se encontró una experiencia laboral con ese título.");
+            }
             if (userEmail == workExperience.UserEmail)
             {
-                _repository.Delete(title);
+                await _repository.Delete(title);
             }
             if (userEmail != workExperience.UserEmail)
             {

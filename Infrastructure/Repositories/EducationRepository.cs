@@ -1,5 +1,6 @@
 ﻿using Domain.Entities;
 using Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,19 +16,19 @@ namespace Infrastructure.Repositories
         {
             _context = context;
         }
-        public Education? GetByTitle(string title)
+        public async Task<Education?> GetByTitle(string title)
         {
-            return _context.Educations.FirstOrDefault(e => e.Title == title);
+            return await _context.Educations.FirstOrDefaultAsync(e => e.Title == title);
         }
-        public void Delete(string title)
+        public async Task Delete(string title)
         {
-            Education? educationToDelete = GetByTitle(title);
+            Education? educationToDelete = await GetByTitle(title);
             if (educationToDelete == null)
             {
                 throw new ArgumentNullException(nameof(educationToDelete));
             }
             _context.Educations.Remove(educationToDelete);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
     }
 }

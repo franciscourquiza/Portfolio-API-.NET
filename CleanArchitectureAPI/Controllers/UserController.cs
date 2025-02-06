@@ -1,11 +1,8 @@
 ﻿using Application.Dtos.UserDtos;
-using Application.Services;
-using Domain.Entities;
+using Application.Interfaces;
+using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Data;
-using System.Security.Claims;
 
 namespace CleanArchitectureAPI.Controllers
 {
@@ -13,50 +10,60 @@ namespace CleanArchitectureAPI.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly UserService _userService;
-        public UserController(UserService userService)
+        private readonly IUserService _userService;
+        private readonly IValidator<UserForAddRequest> _validatorForAdd;
+        private readonly IValidator<UserForEditDto> _validatorForEdit;
+
+        public UserController(IUserService userService, IValidator<UserForAddRequest> validatorForAdd, IValidator<UserForEditDto> validatorForEdit)
         {
             _userService = userService;
+            _validatorForAdd = validatorForAdd;
+            _validatorForEdit = validatorForEdit;
         }
 
         [HttpGet("GetByName/{name}")]
-        public IActionResult GetByName([FromRoute]string name)
+        public async Task<IActionResult> GetUserByName([FromRoute]string name)
         {
-            UserWithoutPasswordDto? user = _userService.GetUserWithoutPasswordByName(name);
+            UserWithoutPasswordDto? user = await _userService.GetUserWithoutPasswordByName(name);
             if (user == null)
             {
-                return NotFound("Persona no encontrada");
+                return NotFound("Persona no encontrada.");
             }
             return Ok(user);
         }
 
-        [HttpGet("GetByEmail/{email}", Name = nameof(GetByEmail))]
-        public IActionResult GetByEmail([FromRoute] string email)
+        [HttpGet("GetByEmail/{email}", Name = nameof(GetUserByEmail))]
+        public async Task<IActionResult> GetUserByEmail([FromRoute] string email)
         {
-            UserWithoutPasswordDto user = _userService.GetUserWithoutPassword(email);
+            UserWithoutPasswordDto? user = await _userService.GetUserWithoutPasswordByEmail(email);
             if (user == null)
             {
-                return NotFound("Usuario no encontrado");
+                return NotFound("Usuario no encontrado.");
             }
             return Ok(user);
         }
 
         [HttpGet("GetAll")]
         [Authorize]
-        public IActionResult GetAll() 
+        public async Task<IActionResult> GetAll() 
         {
             string userRole = User.Claims.FirstOrDefault(c => c.Type.Contains("role")).Value;
-            if (userRole == "Admin" || userRole == "SuperAdmin") 
+            if (userRole == "Admin" || userRole == "SuperAdmin")
             {
-                return Ok(_userService.Get());
+                return Ok(await _userService.GetAllUsers());
             }
             return Forbid();
         }
 
         [HttpPost("CreateAccount")] 
-        public IActionResult AddUser([FromBody] UserForAddRequest body) 
+        public async Task<IActionResult> AddUser([FromBody] UserForAddRequest body) 
         {
-            if (_userService.GetEmailForCreation(body.Email) != null)
+            var validationResult = await _validatorForAdd.ValidateAsync(body);
+            if (!validationResult.IsValid) 
+            {
+                return BadRequest(validationResult.Errors.Select(e => e.ErrorMessage));
+            }
+            if (await _userService.GetUserWithoutPasswordByEmail(body.Email) != null)
             {
                 return Conflict("El email ya está en uso.");
             }
@@ -64,30 +71,35 @@ namespace CleanArchitectureAPI.Controllers
             {
                 return BadRequest();
             }
-            _userService.Add(body); 
-            return CreatedAtRoute(nameof(GetByEmail), new { email = body.Email }, body);
+            await _userService.CreateUser(body);
+            return CreatedAtRoute(nameof(GetUserByEmail), new { email = body.Email }, body);
         }
 
         [HttpPut("EditAccount")] 
         [Authorize]
-        public IActionResult UpdateUser([FromBody] UserForEditDto body)
+        public async Task<IActionResult> UpdateUser([FromBody] UserForEditDto body)
         {
+            var validationResult = await _validatorForEdit.ValidateAsync(body);
+            if (!validationResult.IsValid)
+            {
+                return BadRequest(validationResult.Errors.Select(e => e.ErrorMessage));
+            }
 
             if (body == null) { return BadRequest(); }
-            string userEmail = User.Claims.SingleOrDefault(c => c.Type.Contains("nameidentifier")).Value; 
-            _userService.Update(body, userEmail);
+            string userEmail = User.Claims.SingleOrDefault(c => c.Type.Contains("nameidentifier")).Value;
+            await _userService.UpdateUser(body, userEmail);
             return Ok(body);
         }
 
         [HttpDelete("DeleteByEmail/{email}")] 
         [Authorize]
-        public IActionResult DeleteUserByEmail([FromRoute] string email) 
+        public async Task<IActionResult> DeleteUserByEmail([FromRoute] string email) 
         {
-            string role = User.Claims.SingleOrDefault(c => c.Type.Contains("role")).Value; 
-            if (role == "SuperAdmin")
+            string role = User.Claims.SingleOrDefault(c => c.Type.Contains("role")).Value;
+            if (role == "SuperAdmin") 
             {
-               _userService.Delete(email);
-                return NoContent();
+                await _userService.DeleteUserByEmail(email);
+                return Ok("Se eliminó exitosamente el usuario.");
             }
             return Forbid();
         }

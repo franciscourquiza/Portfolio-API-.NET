@@ -1,41 +1,40 @@
 ﻿using Application.Dtos.EducationDtos;
+using Application.Interfaces;
 using AutoMapper;
 using Domain.Entities;
+using Domain.Exceptions;
 using Domain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using FluentValidation;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace Application.Services
 {
-    public class EducationService 
+    public class EducationService : IEducationService
     {
         private readonly IEducationRepository _repository;
         private readonly IMapper _mapper;
-        private readonly IUserRepository _userRepository;
-        public EducationService(IEducationRepository repository, IMapper mapper, IUserRepository userRepository) 
+        public EducationService(IEducationRepository repository, IMapper mapper) 
         {
             _repository = repository;
             _mapper = mapper;
-            _userRepository = userRepository;
         }
-        public Education? GetByTitle(string title)
+        public async Task<Education?> GetByTitle(string title)
         {
-            return _repository.GetByTitle(title);
+            Education? education = await _repository.GetByTitle(title);
+            return education;
         }
-        public Education? Get(int id)
+        public async Task<Education?> GetById(int id)
         {
-            return _repository.Get(id);
+            Education? education = await _repository.Get(id);
+            return education;
         }
 
-        public List<Education> Get()
+        public async Task<List<Education>> Get()
         {
-            return _repository.Get();
+            return await _repository.Get();
         }
 
-        public Education Add(EducationForAddDto request, string userEmail)
+        public async Task<Education> Add(EducationForAddDto request, string userEmail)
         {
             if (request == null)
             {
@@ -45,32 +44,34 @@ namespace Application.Services
             Education education = _mapper.Map<Education>(request);
             education.UserEmail = userEmail;
 
-            _repository.Add(education);
+            await _repository.Add(education);
             return education;
         }
-        public void Update(EducationForEditDto request, string title, string userEmail)
+        public async Task<Education?> Update(EducationForEditDto request, string title, string userEmail)
         {
-            Education educationToEdit = _repository.GetByTitle(title);
+            Education? educationToEdit = await _repository.GetByTitle(title);
             if (educationToEdit == null)
             {
-                throw new InvalidOperationException("No se encontró la educación.");
-            }
-            if (userEmail == educationToEdit.UserEmail)
-            {
-                Education educationEdited = _mapper.Map(request, educationToEdit);
-                _repository.Update(educationEdited);
+                throw new NotFoundException("No se encontró la educación.");
             }
             if (userEmail != educationToEdit.UserEmail)
             {
                 throw new InvalidOperationException("Esta educación no pertenece a tu usuario.");
             }
+            Education educationEdited = _mapper.Map(request, educationToEdit);
+            await _repository.Update(educationEdited);
+            return educationEdited;
         }
-        public void Delete(string title, string userEmail)
+        public async Task Delete(string title, string userEmail)
         {
-            Education? education = _repository.GetByTitle(title);
+            Education? education = await _repository.GetByTitle(title);
+            if (education == null)
+            {
+                throw new NotFoundException("No se encontró una educación con ese título");
+            }
             if (userEmail == education.UserEmail)
             {
-                _repository.Delete(title);
+                await _repository.Delete(title);
             }
             if (userEmail != education.UserEmail)
             {

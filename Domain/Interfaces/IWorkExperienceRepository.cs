@@ -9,7 +9,7 @@ namespace Domain.Interfaces
 {
     public interface IWorkExperienceRepository : IBaseRepository<WorkExperience>
     {
-        WorkExperience? GetByTitle(string title);
-        void Delete(string title);
+        Task<WorkExperience?> GetByTitle(string title);
+        Task Delete(string title);
     }
 }

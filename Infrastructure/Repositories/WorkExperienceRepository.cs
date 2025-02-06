@@ -17,19 +17,19 @@ namespace Infrastructure.Repositories
         {
             _context = context;
         }
-        public WorkExperience? GetByTitle(string title)
+        public async Task<WorkExperience?> GetByTitle(string title)
         {
-            return _context.WorkExperiences.FirstOrDefault(x => x.Title == title);
+            return await _context.WorkExperiences.FirstOrDefaultAsync(x => x.Title == title);
         }
-        public void Delete(string title)
+        public async Task Delete(string title)
         {
-            WorkExperience? workExperienceToDelete = GetByTitle(title);
+            WorkExperience? workExperienceToDelete = await GetByTitle(title);
             if (workExperienceToDelete == null) 
             {
                 throw new ArgumentNullException(nameof(workExperienceToDelete));
             }
             _context.WorkExperiences.Remove(workExperienceToDelete);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
     }
 }

@@ -1,11 +1,5 @@
-using Application.Services;
-using Domain.Interfaces;
 using Infrastructure;
-using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
-using AutoMapper;
-using Application.Profiles;
-using Microsoft.OpenApi.Models;
 using System.Text;
 using CleanArchitectureAPI.Dependencies;
 
@@ -13,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
-//Servicecs, Repositories, Automapper and Swagger dependencies injection
+//Services, Repositories, Automapper and Swagger dependencies injection
 builder.Services.InjectDependencies(builder.Configuration);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

@@ -2,31 +2,28 @@
 using Domain.Entities;
 using Domain.Interfaces;
 using System.Security.Cryptography;
-using System.Text;
-using Newtonsoft.Json.Linq;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Identity;
+using Application.Interfaces;
 namespace Application.Services
 {
-    public class AuthenticationService
+    public class AuthenticationService : IAuthenticationService
     {
         private readonly IUserRepository _repository;
-        private readonly UserService _service;
         private readonly ITokenVerifyRepository _tokenVerifyRepository;
-        private readonly EmailService _emailService;
+        private readonly IEmailService _emailService;
         private readonly IPasswordHasher<User> _passwordHasher;
-        public AuthenticationService(IUserRepository repository, UserService service, ITokenVerifyRepository tokenVerifyRepository, EmailService emailService, IPasswordHasher<User> passwordHasher) 
+        public AuthenticationService(IUserRepository repository, ITokenVerifyRepository tokenVerifyRepository, IEmailService emailService, IPasswordHasher<User> passwordHasher) 
         { 
             _repository = repository;
-            _service = service;
             _tokenVerifyRepository = tokenVerifyRepository;
             _emailService = emailService;
             _passwordHasher = passwordHasher;
         }
 
-        public Tuple<bool,User?> ValidateUser(string email, string password)
+        public async Task<Tuple<bool,User?>> ValidateUser(string email, string password)
         {
-            User? userForLogin = _repository.GetByEmail(email);
+            User? userForLogin = await _repository.GetByEmail(email);
             if (userForLogin != null)
             {
                 if (userForLogin.Password == password)
@@ -40,7 +37,7 @@ namespace Application.Services
         {
             try
             {
-                User? user = _repository.GetByEmail(request.Email);
+                User? user = await _repository.GetByEmail(request.Email);
                 if (user == null) throw new KeyNotFoundException($"Cuenta con el email {request.Email} no encontrada.");
                 string token = GenerateVerificationCode();
                 TokenVerify tokenVerify = new TokenVerify
@@ -69,11 +66,11 @@ namespace Application.Services
             {
                 TokenVerify tokenVerify = await _tokenVerifyRepository.GetByToken(token, TokenType.PasswordReset);
                 if (tokenVerify == null || tokenVerify.ExpirationDate < DateTime.UtcNow) throw new SecurityTokenException("Invalid token or expired");
-                User user = await _service.GetByEmailAsync(tokenVerify.UserEmail);
+                User? user = await _repository.GetByEmail(tokenVerify.UserEmail);
                 if (user == null) throw new KeyNotFoundException($"User not found");
                 string newPassword = GenerateRandomPassword();
                 user.Password = newPassword;
-                await _repository.UpdateAsync(user);
+                await _repository.Update(user);
                 await _tokenVerifyRepository.Delete(tokenVerify);
                 await _emailService.SendNewPasswordEmail(user, newPassword);
                 return true;
@@ -88,7 +85,7 @@ namespace Application.Services
 
         private string GenerateVerificationCode() 
         { 
-            using (var rng = new RNGCryptoServiceProvider())
+            using (var rng = RandomNumberGenerator.Create())
             {
                 var tokenData = new byte[32];
                 rng.GetBytes(tokenData);

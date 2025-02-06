@@ -439,3 +439,7 @@ C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj
 C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.pdb
 C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\CleanArchitectureAPI.genruntimeconfig.cache
 C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\ref\CleanArchitectureAPI.dll
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\bin\Debug\net8.0\CleanArchitectureAPI.staticwebassets.endpoints.json
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets\msbuild.CleanArchitectureAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\cvpru\OneDrive\Escritorio\CleanArchitectureAPI\CleanArchitectureAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
